@@ -7,7 +7,7 @@ public class app4 {
         System.out.print("Entrez une chaîne de caractères : ");
         String ch = scanner.nextLine();
 
-        String inverse = new StringBuilder(ch).reverse().toString();
+        String inverse = new String(ch).reverse().toString();
         System.out.println("Chaîne inversée : " + inverse);
 
         scanner.close();
