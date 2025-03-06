@@ -7,7 +7,7 @@ public class app5 {
         System.out.print("Entrez une chaîne de caractères : ");
         String ch = scanner.nextLine();
 
-        StringBuffer result = new StringBuffer();
+        String result = scanner.nextLine();
         for (int i = 0; i < ch.length(); i++) {
             result.append(ch.charAt(i));
             if (i != ch.length() - 1) {
