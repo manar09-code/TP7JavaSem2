@@ -5,13 +5,13 @@ public class app1 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Entrez une chaîne de caractères (max 50 caractères) : ");
-        String ch = scanner.nextLine();
+        StringBuffer ch = new StringBuffer();
 
         System.out.print("Entrez mot1 (max 10 caractères) : ");
-        String mot1 = scanner.nextLine();
+        StringBuffer mot1 = new StringBuffer();
 
         System.out.print("Entrez mot2 (max 10 caractères) : ");
-        String mot2 = scanner.nextLine();
+        StringBuffer mot2 = new StringBuffer();
 
         if (ch.length() > 50 || mot1.length() > 10 || mot2.length() > 10) {
             System.out.println("Erreur : La longueur dépasse la limite.");
