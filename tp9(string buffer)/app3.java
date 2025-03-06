@@ -5,12 +5,12 @@ public class app3 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Entrez une chaîne de caractères (max 20 caractères) : ");
-        String ch = scanner.nextLine();
+        StringBuffer ch = new StringBuffer();
 
         if (ch.length() > 20) {
             System.out.println("Erreur : La longueur dépasse la limite.");
         } else {
-            StringBuilder result = new StringBuilder();
+            StringBuffer result = new StringBuffer();
             boolean capitalizeNext = true;
 
             for (int i = 0; i < ch.length(); i++) {
