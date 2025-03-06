@@ -5,19 +5,19 @@ public class app2 {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Entrez une chaîne de caractères (max 30 caractères) : ");
-        String ch = scanner.nextLine();
+        StringBuffer ch = new StringBuffer();
 
         if (ch.length() > 30) {
             System.out.println("Erreur : La longueur dépasse la limite.");
         } else {
-            StringBuilder result = new StringBuilder();
+            StringBuffer result = new StringBuffer();
             for (int i = 0; i < ch.length(); i++) {
                 char c = ch.charAt(i);
                 if (Character.isLetter(c)) {
                     char base = Character.isLowerCase(c) ? 'a' : 'A';
                     c = (char) (base + (c - base + 3) % 26);
                 }
-                result.append(c);
+                result.append(c); 
             }
             System.out.println("Résultat : " + result.toString());
         }
